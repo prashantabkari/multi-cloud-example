@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     s3_client = boto3.client('s3')
     response = s3_client.get_object(Bucket='gcp-image', Key='front.jpg')
     image_bytes = response['Body'].read()
-    print(image_bytes)
+
     
     image = vision.Image(content=image_bytes)
 
