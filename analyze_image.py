@@ -25,7 +25,7 @@ class ImageClassifier:
 
     def InitializeAzureClient(self):
         azureClient = CosmosClient(url='https://image-classifier-account.documents.azure.com:443/',
-                              credential='awLJ29b0qWxFtFntdmIy2KbVty5jFkprpV3HGWFz9UNUSrzugH3MWQ2pFm1eQVcjH8o8GqQbJqSTXKlGPYa0SQ==')
+                              credential='XX==')
 
         database_name = "mc_image_db"
         try:
